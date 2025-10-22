@@ -9,4 +9,4 @@
 const canvas = document.getElementById("puzzle")
 const ctx = canvas.getContext("2d")
 const userImage = document.getElementById("puzzleImage")
-ctx.drawImage(userImage,10,10)
+ctx.drawImage(userImage,0,0,750,750)
