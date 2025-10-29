@@ -7,21 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="puzzleComplete">
+        <div id="popupMessage">
+            <h1>Puzzle Complete</h1>
+            <button id="nextPuzzle">New Puzzle</button>
+        </div>
+        
+
+    </div>
     <header>
         <h1>Jigsaw</h1>
         <button>Dark Mode</button>
     </header>
     <main>
-    <canvas id="puzzle" width="750px" height="750px"></canvas>
+    <canvas id="puzzle" width="700px" height="700px"></canvas>
     <div class = "difficultyContainer">
         <h2>Difficulty</h2>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
+        <button id="difficulty1">1</button>
+        <button id="difficulty2">2</button>
+        <button id="difficulty3">3</button>
+        <button id="difficulty4">4</button>
+        <button id="difficulty5">5</button>
+        <button id="difficulty6">6</button>
+        <button id="difficulty7">7</button>
     </div>
     <script type="module"src="script.js"></script>
     </main>    
