@@ -117,7 +117,7 @@ canvas.addEventListener("mouseup", () => {
       document.getElementById("puzzleComplete").style.display = "flex"
       document.getElementById("nextPuzzle").onclick = () => {
         document.getElementById("puzzleComplete").style.display = "none"
-        main(++difficulty) // increment has to go before otherwise it doesnt work the first time
+        main(difficulty+1) // increment has to go before otherwise it doesnt work the first time
       }
     }
 })
