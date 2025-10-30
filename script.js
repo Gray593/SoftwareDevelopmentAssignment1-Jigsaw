@@ -147,4 +147,4 @@ theme.onclick = () => {
 }
   
   
-main(1)
+main(difficulty)
