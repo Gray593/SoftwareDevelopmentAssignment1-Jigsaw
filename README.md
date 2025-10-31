@@ -1,8 +1,9 @@
-# SoftwareDevelopmentAssignment1-JigSaw
-## Context
+# Software Development Assignment 1 - Jigsaw Website
+ 
 ### 1.1 Project Introduction
-This project is a jigsaw puzzle website that was made in html, css and javascript. The jigsaw puzzle consists of multiple dragable pieces that lock into place when placed in the correct location to make a bigger image. There are eight total images that can be used for the puzzle with the infrastructure in place to support future additions to the image pool. The website also contains 7 total difficulties that can be manually selected or automatically ascended through as puzzle are ccompleted. The user is also provided the option of dark mode to reduce eye strain in low light environments.
+This project is a jigsaw puzzle website that was made in html, css and javascript utilising html canvas. The jigsaw puzzle consists of multiple dragable pieces that lock into place when placed in the correct location to make a bigger image. There are eight total images that can be used for the puzzle with the infrastructure in place to support future additions to the image pool. The website also contains 7 total difficulties that can be manually selected or automatically ascended through as puzzle are ccompleted. The user is also provided the option of dark mode to reduce eye strain in low light environments. 
 
+here is the live site: https://gray593.github.io/SoftwareDevelopmentAssignment1-Jigsaw/
 
 ### 1.2 Group Contributers
 
@@ -12,8 +13,11 @@ I am the sole contributer for this project
 
 ![Design Board](./ReportImages/DesignBoard.png)
 
+Above is the design board that was created throughout the projects development 
 
 ### 1.4 Target User Profiles
+![User Profile 1](./ReportImages/UserProfile1.png)
+![User Profile 2](./ReportImages/UserProfile2.png)
 
 ### 1.5 User Requirements
 
@@ -27,3 +31,5 @@ I am the sole contributer for this project
 ## 2.0
 ### 2.1 Spec Improvement 
 ### 
+
+https://www.cambridgeinternational.org/Images/697401-2026-pseudocode-guide-for-teachers.pdf

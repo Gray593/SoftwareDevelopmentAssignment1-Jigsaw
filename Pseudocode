@@ -1,0 +1,42 @@
+DECLARE difficulty : INTEGER <- 1
+DECLARE pieces : ARRAY
+DECLARE Image : STRING
+DECLARE selectedPiece <- NULL
+
+PROCEDURE Main(difficulty : INTEGER)
+   IF difficulty > 7 THEN
+      difficulty <- 7
+   END IF
+   Image <- RANDOM_IMAGE()
+   pieces <- GENERATE_PIECES(difficulty)
+   SHUFFLE(pieces)
+   DISPLAY_PUZZLE(pieces)
+END PROCEDURE
+
+EVENT MouseDown(mouseX, mouseY)
+   selectedPiece <- GET_PIECE_AT(mouseX, mouseY)
+END EVENT
+
+EVENT MouseMove(mouseX, mouseY)
+   IF selectedPiece IS NOT NULL THEN
+      MOVE_PIECE(selectedPiece, mouseX, mouseY)
+      UPDATE_DISPLAY()
+   END IF
+END EVENT
+
+EVENT MouseUp()
+   IF selectedPiece IS CLOSE TO correct position THEN
+      SNAP_PIECE(selectedPiece)
+   END IF
+   IF PUZZLE_SOLVED(pieces) THEN
+      DISPLAY "Puzzle Complete"
+      CALL Main(difficulty + 1)
+   END IF
+   selectedPiece <- NULL
+END EVENT
+
+EVENT ThemeButtonClick()
+   TOGGLE_THEME()
+END EVENT
+
+CALL Main(1)
