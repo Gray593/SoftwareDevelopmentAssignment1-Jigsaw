@@ -46,17 +46,37 @@ Above is the Pseudocode that was created based off of the flowchart to map the h
 ![OnclickFunctionSite](./ReportImages/OnclickFunctionSite.png)
 
 ### 1.4 Target User Profiles
+
 ![User Profile 1](./ReportImages/UserProfile1.png)
 ![User Profile 2](./ReportImages/UserProfile2.png)
 
 ### 1.5 User Requirements
 
+
+
 ### 1.6 System Requirements 
 
 ### 1.7 System Testing
+
 ![Testing page 1](./ReportImages/TestingPart1.png)
 ![Testing page 2](./ReportImages/TestingPart2.png)
+
 ### 1.8 Review of the Development Strategy
+During the development of this project, iterative development was utilised to ensure the output was of a sufficient quality and didn’t stray from the needs of the user. Iterative development is the process of repeating steps of the development cycle and building up the software piece by piece and learn from every step (Wikipedia, 2025).
+This development strategy was implemented constantly throughout the development process this can be observed in the above flowchart which only displays the games basic higher level functionality this logic was then developed into a minimum viable product (MVP) that at first just displayed an image this was then iterated upon to slice the image into pieces and then was further developed to shuffle the pieces. After this pseudocode was then developed to better map out more complex game features. A more specific example of iterative development that was employed in the development process was the discovery of the drawImage function running before the image was loaded this was iterated upon until it was placed within the userImage.onload event, this ensured the image had loaded before being drawn. The main advantages of iterative development are it allows for continuous improvement, it is very flexable (One Beyond, 2025) and is good for projects of a smaller size like this project (Agile Business Consortium, 2025). Unfortunately like all development strategies iterative development does have some disadvantages one of which is the length of time it takes to deliver the final project (Brown, 2025). The iterative process can be very slow and the amount of time required scales exponentially with project scope. Fortunately, this disadvantage was mitigated by the small scope of this project. Another disadvantage of iterative development is the cost of resources consumed by the project can be quite high due to the repetitive nature of each iteration and the amount of time consumed by this process (ProfessionalQa.com, 2019).  
+
+### 1.9 Evaluation
+
 
 ## 2.0 References 
 https://www.cambridgeinternational.org/Images/697401-2026-pseudocode-guide-for-teachers.pdf
+
+https://en.wikipedia.org/wiki/Iterative_and_incremental_development
+
+https://one-beyond.com/pros-cons-iterative-software-development/
+
+https://www.agilebusiness.org/dsdm-project-framework/iterative-development.html
+
+https://www.invensislearning.com/blog/agile-vs-iterative-model/
+
+https://www.professionalqa.com/iterative-model
