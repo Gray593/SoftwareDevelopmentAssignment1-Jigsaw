@@ -50,9 +50,18 @@ Above is the Pseudocode that was created based off of the flowchart to map the h
 ![User Profile 1](./ReportImages/UserProfile1.png)
 ![User Profile 2](./ReportImages/UserProfile2.png)
 
+
+
 ### 1.5 User Requirements
+Based on the above user profiles a set of user requirements can be developed as found below.
 
-
+* The puzzles on the website should vary in difficulty and let the user select the difficulty as both Clare and John have differing needs in this regard
+* The website and puzzles should load quickly as Clare is impatient
+* The images used for the puzzles should be high quality, visually appeasing and primarily scenic landscapes as both Clare and John emphasised the importance of the quality images used for the puzzle
+* The user interface should be responsive and easy to navigate this was emphasised in Clare’s user profile
+* Pieces should be reasonably sized and high contrast from the background as John is visually impaired
+* Pieces should snap into place as John misses this when completing digital jigsaws and gets frustrated by the lack of feedback
+ 
 
 ### 1.6 System Requirements 
 This section contains the system requirements for this project that have been divided into subcategories based on their context:
@@ -85,6 +94,8 @@ Game rules and mechanical requirements:
 
 ![Testing page 1](./ReportImages/TestingPart1.png)
 ![Testing page 2](./ReportImages/TestingPart2.png)
+
+Above is the full system testing log that was completed at the end of development as can be observed the website passed all test this is due to the iterative development style that enabled the program to continually be improved throughout the development process and detailed system requirements that ensured the project always moved in the correct direction. 
 
 ### 1.8 Review of the Development Strategy
 During the development of this project, iterative development was utilised to ensure the output was of a sufficient quality and didn’t stray from the needs of the user. Iterative development is the process of repeating steps of the development cycle and building up the software piece by piece and learn from every step (Wikipedia, 2025).
