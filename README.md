@@ -3,11 +3,11 @@
 ### 1.1 Project Introduction
 This project is a jigsaw puzzle website that was made in html, css and javascript utilising html canvas. The jigsaw puzzle consists of multiple dragable pieces that lock into place when placed in the correct location to make a bigger image. There are eight total images that can be used for the puzzle with the infrastructure in place to support future additions to the image pool. The website also contains 7 total difficulties that can be manually selected or automatically ascended through as puzzle are ccompleted. The user is also provided the option of dark mode to reduce eye strain in low light environments. 
 
-here is the live site: https://gray593.github.io/SoftwareDevelopmentAssignment1-Jigsaw/
+Here is the live site: https://gray593.github.io/SoftwareDevelopmentAssignment1-Jigsaw/
 
 ### 1.2 Group Contributers
 
-I am the sole contributer for this project 
+I am the sole contributer for this project. 
 
 ### 1.3 Design and Functional Breakdown 
 
@@ -102,6 +102,13 @@ During the development of this project, iterative development was utilised to en
 This development strategy was implemented constantly throughout the development process this can be observed in the above flowchart which only displays the games basic higher level functionality this logic was then developed into a minimum viable product (MVP) that at first just displayed an image this was then iterated upon to slice the image into pieces and then was further developed to shuffle the pieces. After this pseudocode was then developed to better map out more complex game features. A more specific example of iterative development that was employed in the development process was the discovery of the drawImage function running before the image was loaded this was iterated upon until it was placed within the userImage.onload event, this ensured the image had loaded before being drawn. The main advantages of iterative development are it allows for continuous improvement, it is very flexable (One Beyond, 2025) and is good for projects of a smaller size like this project (Agile Business Consortium, 2025). Unfortunately like all development strategies iterative development does have some disadvantages one of which is the length of time it takes to deliver the final project (Brown, 2025). The iterative process can be very slow and the amount of time required scales exponentially with project scope. Fortunately, this disadvantage was mitigated by the small scope of this project. Another disadvantage of iterative development is the cost of resources consumed by the project can be quite high due to the repetitive nature of each iteration and the amount of time consumed by this process (ProfessionalQa.com, 2019).  
 
 ### 1.9 Evaluation
+This section will aim to evaluate the project’s success against system and user requirements and then reason whether the project was a success overall
+
+The website does a great job of meeting the user requirements. The website and the puzzles contained within load near instantly. The images used are high resolution and are visually appealing while contributing to the difficulty of the puzzle. They are also high contrast compared to the background to accommodate visually impaired users. The interface is clear and easy to navigate. The pieces snap into place when in the correct position. For the most part pieces are decently sized but as the difficulty increases the pieces get smaller this could negatively impact some users and partially fails to completely meet the user requirement. In future this could be remedied by increasing the game board size with difficulty rather than shrinking the pieces. Overall, the website has met nearly all of the users requirements therefore meeting the needs outlined by clare and john in their user profiles. 
+
+Furthermore, the website also meets all system requirements. The website runs seamlessly when used within the parameters outlined in the hardware requirements. All project requirements have been met. The website allows the user to complete jigsaw within the web browser. The user can select a difficulty; the number of pieces increase with the difficulty. Once the puzzle is complete the puzzle complete screen is displayed, and the user can load a new puzzle. Dark mode has been successfully implemented allowing for the website to be used comfortably in low light environments. The website has successfully matched the aesthetic outlined in the design in an attempt to be aesthetically pleasing. All game rules and mechanical requirements have been met. The website successfully loads an image, slices it into pieces that are draggable and snap into the correct place. when the puzzle is completed, the user is congratulated and prompted to start a new puzzle. The user is also able to select puzzles of varying difficulties as outlined in the requirements.
+
+Overall, the website is a success when measured by its ability to fulfil the requirements set out prior to its development. In future to improve the project the board would increase in size rather than the pieces decrease when playing on higher difficulties. Leaderboards would be introduced to track who completes the most puzzles and more images would be added to the image pool to increase replayability.
 
 
 ## 2.0 References 
