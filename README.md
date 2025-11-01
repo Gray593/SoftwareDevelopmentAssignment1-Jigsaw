@@ -39,8 +39,8 @@ Above is the Pseudocode that was created based off of the flowchart to map the h
 ![ShuffleFunction](./ReportImages/ShuffleFunction.png)
 ![ShuffleFunctionSite](./ReportImages/ShuffleFunctionSite.png)
 ### 1.3.6 Event Listeners Breakdown 
-![EventFunction](./ReportImages/EventFunction.png)
-![EventFunctionSite](./ReportImages/EventFunctionSite.png)
+![EventFunction](./ReportImages/EventListeners.png)
+![EventFunctionSite](./ReportImages/EventListenersSite.png)
 ### 1.3.7 Onclick Function Breakdown 
 ![OnclickFunction](./ReportImages/OnclickFunctions.png)
 ![OnclickFunctionSite](./ReportImages/OnclickFunctionSite.png)
