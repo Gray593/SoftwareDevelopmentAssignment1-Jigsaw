@@ -42,7 +42,7 @@ Above is the Pseudocode that was created based off of the flowchart to map the h
 ![EventFunction](./ReportImages/EventFunction.png)
 ![EventFunctionSite](./ReportImages/EventFunctionSite.png)
 ### 1.3.7 Onclick Function Breakdown 
-![OnclickFunction](./ReportImages/OnclickFunction.png)
+![OnclickFunction](./ReportImages/OnclickFunctions.png)
 ![OnclickFunctionSite](./ReportImages/OnclickFunctionSite.png)
 
 ### 1.4 Target User Profiles
