@@ -55,6 +55,31 @@ Above is the Pseudocode that was created based off of the flowchart to map the h
 
 
 ### 1.6 System Requirements 
+This section contains the system requirements for this project that have been divided into subcategories based on their context:
+
+Hardware Requirements:
+* The project will be optimised for computers not for mobile so although it will still function on mobile but there may be some optimisation issues or bugs
+* The game is built for modern browsers, it requires JavaScript to be enabled and therefore may not work on older browsers
+* The website has been designed for at least 1080p and may be too zoomed in on lower resolutions and too zoomed out on resolutions of a lot larger scale
+* An input method that can utilise the mouse pointer is required as the game is designed to be played with the cursor and therefore is unplayable with just a keyboard or game controller
+
+Project Requirements:
+* The program must allow users to play a jigsaw puzzle game in the web browser without having to download any resources
+* The puzzle will load a random image when the page is loaded and every time a new puzzle is started 
+* The user can select a difficulty level that increases the number of puzzle pieces as the difficulty increases
+* The program must display a “Puzzle Complete” message when the puzzle is solved
+* A “Next Puzzle” button must be displayed to the user after puzzle completion that allows the player to start a new puzzle
+* A “Dark Mode” button will toggle between light and dark themes.
+* The website will be aesthetically pleasing.
+
+Game rules and mechanical requirements:
+* The puzzle will be created by slicing an image into pieces
+* The pieces will then be shuffled randomly
+* The user can use the cursor to drag pieces around the canvas/puzzle board
+* When pieces are approximately in the right position they should snap into place and be locked
+* When the puzzle is completed, the program should detect this congratulate the user and prompt them to start a new puzzle
+* Multiple difficulty buttons will be available to the user to allow for them to increase the difficulty from the default
+
 
 ### 1.7 System Testing
 
