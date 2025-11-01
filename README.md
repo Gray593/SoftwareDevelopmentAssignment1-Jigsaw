@@ -56,6 +56,7 @@ Above is the Pseudocode that was created based off of the flowchart to map the h
 ### 1.7 System Testing
 ![Testing page 1](./ReportImages/TestingPart1.png)
 ![Testing page 2](./ReportImages/TestingPart2.png)
-### 1.8 review of the development strategy
+### 1.8 Review of the Development Strategy
 
+## 2.0 References 
 https://www.cambridgeinternational.org/Images/697401-2026-pseudocode-guide-for-teachers.pdf
