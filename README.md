@@ -21,24 +21,24 @@ Above is the flowchart that was created to plan the high level functionality of 
 
 ![Pseudocode](./ReportImages/Pseudocode.png)
 
-Above is the Pseudocode that was created based off of the flowchart to map the high level functionality in more detail. It has been created in line with the standards outlined in the referenced document.
+Above is the Pseudocode that was created based off of the flowchart to map the high level functionality in more detail. It has been created in line with the standards outlined in the referenced document (Cambridge International, 2025).
 
 ### 1.3.1 Draw Function Breakdown
 ![DrawFunction](./ReportImages/DrawFunction.png)
 ![DrawFunctionSite](./ReportImages/DrawFunctionSite.png)
 
-The draw function when called clears the canvas and then iterates through the pieces list first drawing all the locked pieces that are in the correct location and then drawing the pieces that are unlocked. this is to ensure the moveable pieces are brought to top and can be clearly seen by the user this is necessary because as the puzzles increase in difficulty pieces were getting hidden behind other pieces. All code in this function is original but was helped greatly by the w3schools html draw on canvas web page (w3shcools, 2025) 
+The draw function when called clears the canvas and then iterates through the pieces list first drawing all the locked pieces that are in the correct location and then drawing the pieces that are unlocked. this is to ensure the moveable pieces are brought to top and can be clearly seen by the user this is necessary because as the puzzles increase in difficulty pieces were getting hidden behind other pieces. All code in this function is original but was helped greatly by the W3Schools html draw on canvas web page (W3Schools, 2025a) 
 ### 1.3.2 Solved Function Breakdown
 ![Solved Function](./ReportImages/SolvedFunction.png)
 ![SolvedFunctionSite](./ReportImages/SolvedFunctionSite.png)
 
-The solved function is relatively simple compared to other functions within this project it ensures that every object in the pieces array is in the correct position. This is achieved by taking the absolute value of the x and y co-ordinates of every piece and then ensuring the result is less than one. All code in this function is original but was greatly helped by the Mdn documents for both .abs(mdn,2025) and .every(mdn,2025)
+The solved function is relatively simple compared to other functions within this project it ensures that every object in the pieces array is in the correct position. This is achieved by taking the absolute value of the x and y co-ordinates of every piece and then ensuring the result is less than one. All code in this function is original but was greatly helped by the Mdn documents for both .abs(mdn,2023) and .every(mdn,2025a)
 
 ### 1.3.3 Main Function Breakdown 
 ![MainFunction](./ReportImages/MainFunction.png)
 ![MainFunctionSite](./ReportImages/MainFunctionSite.png)
 
-The main function is the core of this program and will have the child functions of create and shuffle broken down in their own corresponding sections. This function is called when the website loads and is called again whenever the user starts a new puzzle it takes in one parameter which is an integer that indicates the difficulty of the current puzzle it then ensures the global variable is the same as the local variable, as the comment indicates this was a problem encountered in development the resolution of this bug was found on Stack Overflow. Next the columns and rows are set to the difficulty integer plus two, this ensures a healthy increase in difficulty as the integer increases as the columns multiplied by the rows equal the total number of pieces. Then the pieces array is created and the selected piece variable is assigned to null. The next line of code creates a new html image tag assigns it to a variable then in the next line the images source is set to a random image from the list of image URLs at the top of the code. The Image() constructor was a new concept that hadn’t been encountered until now, Mdn documentation was utilised to ensure this function was used correctly (Mdn, 2025). Next the piece height and width are assigned by dividing the width and height of the canvas by the columns/rows. Finally the onload function at the bottom of the main function ensures that the puzzle is not created until the image has loaded. All code in this function is original unless previously stated otherwise.
+The main function is the core of this program and will have the child functions of create and shuffle broken down in their own corresponding sections. This function is called when the website loads and is called again whenever the user starts a new puzzle it takes in one parameter which is an integer that indicates the difficulty of the current puzzle it then ensures the global variable is the same as the local variable, as the comment indicates this was a problem encountered in development the resolution of this bug was found on Stack Overflow. Next the columns and rows are set to the difficulty integer plus two, this ensures a healthy increase in difficulty as the integer increases as the columns multiplied by the rows equal the total number of pieces. Then the pieces array is created and the selected piece variable is assigned to null. The next line of code creates a new html image tag assigns it to a variable then in the next line the images source is set to a random image from the list of image URLs at the top of the code. The Image() constructor was a new concept that hadn’t been encountered until now, Mdn documentation was utilised to ensure this function was used correctly (Mdn, 2025b). Next the piece height and width are assigned by dividing the width and height of the canvas by the columns/rows. Finally the onload function at the bottom of the main function ensures that the puzzle is not created until the image has loaded. All code in this function is original unless previously stated otherwise.
 
 ### 1.3.4 Create Function Breakdown
 ![CreateFunction](./ReportImages/CreateFunction.png)
@@ -56,7 +56,7 @@ The shuffle function shuffles the pieces in the pieces array into a random order
 ![EventFunction](./ReportImages/EventListeners.png)
 ![EventFunctionSite](./ReportImages/EventListenersSite.png)
 
-There are three event listeners needed to allow the code to function mouse down, mouse move and mouse up. mouse down works out if a piece has been clicked on when the users clicks and then if a piece has been clicked calculates the cursor offset from the top left of the piece. The mouse move function returns if a piece is not selected but if a piece is selected the pieces x and y update with the cursor then the piece is redrawn to the canvas. The mouse up event listener returns if a piece isn’t selected. If a piece is selected it calculates if the pieces x and y are within a certain tolerance to the correct x and y and if the piece is, it is snapped into the correct place then the selected piece variable is set back to null and the board is redrawn. The final part of the mouse up event listener checks if the puzzle in its entirety has been solved and if it has displays the puzzle complete screen that allows the user to load a new puzzle. All code in this function is original but was helped greatly by the W3Schools website in regard to mouse event offset x and y (W3Schools, 2025)
+There are three event listeners needed to allow the code to function mouse down, mouse move and mouse up. mouse down works out if a piece has been clicked on when the users clicks and then if a piece has been clicked calculates the cursor offset from the top left of the piece. The mouse move function returns if a piece is not selected but if a piece is selected the pieces x and y update with the cursor then the piece is redrawn to the canvas. The mouse up event listener returns if a piece isn’t selected. If a piece is selected it calculates if the pieces x and y are within a certain tolerance to the correct x and y and if the piece is, it is snapped into the correct place then the selected piece variable is set back to null and the board is redrawn. The final part of the mouse up event listener checks if the puzzle in its entirety has been solved and if it has displays the puzzle complete screen that allows the user to load a new puzzle. All code in this function is original but was helped greatly by the W3Schools website in regard to mouse event offset x and y (W3Schools, 2025b)
 ### 1.3.7 Onclick Function Breakdown 
 ![OnclickFunction](./ReportImages/OnclickFunctions.png)
 ![OnclickFunctionSite](./ReportImages/OnclickFunctionSite.png)
@@ -118,7 +118,7 @@ Above is the full system testing log that was completed at the end of developmen
 
 ### 1.8 Review of the Development Strategy
 During the development of this project, iterative development was utilised to ensure the output was of a sufficient quality and didn’t stray from the needs of the user. Iterative development is the process of repeating steps of the development cycle and building up the software piece by piece and learn from every step (Wikipedia, 2025).
-This development strategy was implemented constantly throughout the development process this can be observed in the above flowchart which only displays the games basic higher level functionality this logic was then developed into a minimum viable product (MVP) that at first just displayed an image this was then iterated upon to slice the image into pieces and then was further developed to shuffle the pieces. After this pseudocode was then developed to better map out more complex game features. A more specific example of iterative development that was employed in the development process was the discovery of the drawImage function running before the image was loaded this was iterated upon until it was placed within the userImage.onload event, this ensured the image had loaded before being drawn. The main advantages of iterative development are it allows for continuous improvement, it is very flexable (One Beyond, 2025) and is good for projects of a smaller size like this project (Agile Business Consortium, 2025). Unfortunately like all development strategies iterative development does have some disadvantages one of which is the length of time it takes to deliver the final project (Brown, 2025). The iterative process can be very slow and the amount of time required scales exponentially with project scope. Fortunately, this disadvantage was mitigated by the small scope of this project. Another disadvantage of iterative development is the cost of resources consumed by the project can be quite high due to the repetitive nature of each iteration and the amount of time consumed by this process (ProfessionalQa.com, 2019).  
+This development strategy was implemented constantly throughout the development process this can be observed in the above flowchart which only displays the games basic higher level functionality this logic was then developed into a minimum viable product (MVP) that at first just displayed an image this was then iterated upon to slice the image into pieces and then was further developed to shuffle the pieces. After this pseudocode was then developed to better map out more complex game features. A more specific example of iterative development that was employed in the development process was the discovery of the drawImage function running before the image was loaded this was iterated upon until it was placed within the userImage.onload event, this ensured the image had loaded before being drawn. The main advantages of iterative development are it allows for continuous improvement, it is very flexable (One Beyond, 2017) and is good for projects of a smaller size like this project (Agile Business Consortium, 2025). Unfortunately like all development strategies iterative development does have some disadvantages one of which is the length of time it takes to deliver the final project (Brown, 2023). The iterative process can be very slow and the amount of time required scales exponentially with project scope. Fortunately, this disadvantage was mitigated by the small scope of this project. Another disadvantage of iterative development is the cost of resources consumed by the project can be quite high due to the repetitive nature of each iteration and the amount of time consumed by this process (ProfessionalQa.com, 2019).  
 
 ### 1.9 Evaluation
 This section will aim to evaluate the project’s success against system and user requirements and then reason whether the project was a success overall
@@ -131,24 +131,24 @@ Overall, the website is a success when measured by its ability to fulfil the req
 
 
 ## 2.0 References 
-https://www.cambridgeinternational.org/Images/697401-2026-pseudocode-guide-for-teachers.pdf
+Agile Business Consortium (2025). Chapter 11: Iterative Development. [online] www.agilebusiness.org. Available at: https://www.agilebusiness.org/dsdm-project-framework/iterative-development.html [Accessed 2 Nov. 2025].
 
-https://en.wikipedia.org/wiki/Iterative_and_incremental_development
+Brown, L. (2023). Agile Vs. Iterative: Key Differences Explained. [online] Invensis Learning Blog. Available at: https://www.invensislearning.com/blog/agile-vs-iterative-model/ [Accessed 2 Nov. 2025].
 
-https://one-beyond.com/pros-cons-iterative-software-development/
+Cambridge International (2025). Pseudocode Guide for Teachers Cambridge International AS & A Level Computer Science 9618. [online] cambridge international. Available at: https://www.cambridgeinternational.org/Images/697401-2026-pseudocode-guide-for-teachers.pdf [Accessed 2 Nov. 2025].
 
-https://www.agilebusiness.org/dsdm-project-framework/iterative-development.html
+Mdn (2023). Math.abs() - JavaScript | MDN. [online] developer.mozilla.org. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs [Accessed 2 Nov. 2025].
 
-https://www.invensislearning.com/blog/agile-vs-iterative-model/
+Mdn (2025a). Array.prototype.every() - JavaScript | MDN. [online] developer.mozilla.org. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every [Accessed 2 Nov. 2025].
 
-https://www.professionalqa.com/iterative-model
+Mdn (2025b). HTMLImageElement: Image() constructor - Web APIs | MDN. [online] Mozilla.org. Available at: https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image [Accessed 2 Nov. 2025].
 
-https://www.w3schools.com/graphics/canvas_drawing.asp
+One Beyond (2017). The Pros and Cons of Iterative Software Development. [online] One Beyond. Available at: https://one-beyond.com/pros-cons-iterative-software-development/ [Accessed 2 Nov. 2025].
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+ProfessionalQa.com (2019). Iterative Model: Advantages and Disadvantages |Professionalqa.com. [online] www.professionalqa.com. Available at: https://www.professionalqa.com/iterative-model [Accessed 2 Nov. 2025].
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+W3Schools (2025a). HTML Canvas Drawing. [online] www.w3schools.com. Available at: https://www.w3schools.com/graphics/canvas_drawing.asp.
 
-https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
+W3Schools (2025b). W3Schools.com. [online] W3schools.com. Available at: https://www.w3schools.com/jsref/event_offsetx.asp [Accessed 2 Nov. 2025].
 
-https://www.w3schools.com/jsref/event_offsetx.asp
+Wikipedia (2025). Iterative and incremental development. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/Iterative_and_incremental_development [Accessed 2 Nov. 2025].
