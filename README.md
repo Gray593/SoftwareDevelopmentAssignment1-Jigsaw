@@ -13,44 +13,63 @@ I am the sole contributer for this project.
 
 ![Design Board](./ReportImages/DesignBoard.png)
 
-Above is the design board that was created throughout the projects development 
+Above is the design board that was created throughout the projects development. 
 
 ![Design Board](./ReportImages/Flowchart.png)
 
-Above is the flowchart that was created to plan the high level functionality of the project 
+Above is the flowchart that was created to plan the high level functionality of the project. 
 
 ![Pseudocode](./ReportImages/Pseudocode.png)
 
-Above is the Pseudocode that was created based off of the flowchart to map the high level functionality in more detail
+Above is the Pseudocode that was created based off of the flowchart to map the high level functionality in more detail. It has been created in line with the standards outlined in the referenced document.
 
 ### 1.3.1 Draw Function Breakdown
 ![DrawFunction](./ReportImages/DrawFunction.png)
 ![DrawFunctionSite](./ReportImages/DrawFunctionSite.png)
+
+The draw function when called clears the canvas and then iterates through the pieces list first drawing all the locked pieces that are in the correct location and then drawing the pieces that are unlocked. this is to ensure the moveable pieces are brought to top and can be clearly seen by the user this is necessary because as the puzzles increase in difficulty pieces were getting hidden behind other pieces. All code in this function is original but was helped greatly by the w3schools html draw on canvas web page (w3shcools, 2025) 
 ### 1.3.2 Solved Function Breakdown
 ![Solved Function](./ReportImages/SolvedFunction.png)
 ![SolvedFunctionSite](./ReportImages/SolvedFunctionSite.png)
+
+The solved function is relatively simple compared to other functions within this project it ensures that every object in the pieces array is in the correct position. This is achieved by taking the absolute value of the x and y co-ordinates of every piece and then ensuring the result is less than one. All code in this function is original but was greatly helped by the Mdn documents for both .abs(mdn,2025) and .every(mdn,2025)
+
 ### 1.3.3 Main Function Breakdown 
 ![MainFunction](./ReportImages/MainFunction.png)
 ![MainFunctionSite](./ReportImages/MainFunctionSite.png)
+
+The main function is the core of this program and will have the child functions of create and shuffle broken down in their own corresponding sections. This function is called when the website loads and is called again whenever the user starts a new puzzle it takes in one parameter which is an integer that indicates the difficulty of the current puzzle it then ensures the global variable is the same as the local variable, as the comment indicates this was a problem encountered in development the resolution of this bug was found on Stack Overflow. Next the columns and rows are set to the difficulty integer plus two, this ensures a healthy increase in difficulty as the integer increases as the columns multiplied by the rows equal the total number of pieces. Then the pieces array is created and the selected piece variable is assigned to null. The next line of code creates a new html image tag assigns it to a variable then in the next line the images source is set to a random image from the list of image URLs at the top of the code. The Image() constructor was a new concept that hadn’t been encountered until now, Mdn documentation was utilised to ensure this function was used correctly (Mdn, 2025). Next the piece height and width are assigned by dividing the width and height of the canvas by the columns/rows. Finally the onload function at the bottom of the main function ensures that the puzzle is not created until the image has loaded. All code in this function is original unless previously stated otherwise.
+
 ### 1.3.4 Create Function Breakdown
 ![CreateFunction](./ReportImages/CreateFunction.png)
 ![CreateFunctionSite](./ReportImages/CreateFunctionSite.png)
+
+The create function create a nested for loop that iterates through both axis creating a piece object with every iteration each object has five properties the current x and y co-ordinates the correct x and y co-ordinates and whether the piece is locked or not. After each piece is created, it is added to the pieces array. 
+
 ### 1.3.5 Shuffle Function Breakdown 
 ![ShuffleFunction](./ReportImages/ShuffleFunction.png)
 ![ShuffleFunctionSite](./ReportImages/ShuffleFunctionSite.png)
+
+The shuffle function shuffles the pieces in the pieces array into a random order and then sets each piece’s x and y to random positions within the canvas.
+
 ### 1.3.6 Event Listeners Breakdown 
 ![EventFunction](./ReportImages/EventListeners.png)
 ![EventFunctionSite](./ReportImages/EventListenersSite.png)
+
+There are three event listeners needed to allow the code to function mouse down, mouse move and mouse up. mouse down works out if a piece has been clicked on when the users clicks and then if a piece has been clicked calculates the cursor offset from the top left of the piece. The mouse move function returns if a piece is not selected but if a piece is selected the pieces x and y update with the cursor then the piece is redrawn to the canvas. The mouse up event listener returns if a piece isn’t selected. If a piece is selected it calculates if the pieces x and y are within a certain tolerance to the correct x and y and if the piece is, it is snapped into the correct place then the selected piece variable is set back to null and the board is redrawn. The final part of the mouse up event listener checks if the puzzle in its entirety has been solved and if it has displays the puzzle complete screen that allows the user to load a new puzzle. All code in this function is original but was helped greatly by the W3Schools website in regard to mouse event offset x and y (W3Schools, 2025)
 ### 1.3.7 Onclick Function Breakdown 
 ![OnclickFunction](./ReportImages/OnclickFunctions.png)
 ![OnclickFunctionSite](./ReportImages/OnclickFunctionSite.png)
+
+The onclick functions ensure when a button is clicked the correct outcome is achieved the first seven manage the difficulty buttons. When a difficulty button is pressed the main function is called and the corresponding difficulty integer is passed into it. the last event listener toggles dark mode. When the dark mode button is pressed the body's class is toggled applying a new set of CSS properties and the text within the button changes in accordance with the theme.
+ 
 
 ### 1.4 Target User Profiles
 
 ![User Profile 1](./ReportImages/UserProfile1.png)
 ![User Profile 2](./ReportImages/UserProfile2.png)
 
-
+The above user profiles outline two users' requirements for the features of the puzzle website. To summarise John and Clare desire a puzzle website that loads quickly has a responsive easy-to-use UI that clearly displays puzzles of varying difficulty that have pleasing background images that are primarily of landscapes and a dark mode to reduce eye strain.
 
 ### 1.5 User Requirements
 Based on the above user profiles a set of user requirements can be developed as found below.
@@ -123,3 +142,13 @@ https://www.agilebusiness.org/dsdm-project-framework/iterative-development.html
 https://www.invensislearning.com/blog/agile-vs-iterative-model/
 
 https://www.professionalqa.com/iterative-model
+
+https://www.w3schools.com/graphics/canvas_drawing.asp
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
+
+https://www.w3schools.com/jsref/event_offsetx.asp
